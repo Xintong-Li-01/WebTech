@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Contact Us</title>
+
+    <style>
+        p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+        h2{color:black;text-align: left;text-shadow: 1px 1px rgb(131, 167, 207) ;font-size:23px;}
+        h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+        <a target="blank" href="homepage.htm">Home</a>
+        <a target="blank" href="dogpage.html">Find a dog</a>
+        <a target="blank" href="catpage.html">Find a cat</a>
+        <a target="blank" href="resourcepage.html">Resources</a>
+        <a class ="active" href="contactpage.html">Contact us</a>
+      </div>
+    
+<br><br>
+
+    
+<h1 style="margin-left:20%;font-size: 40px;">Contact us</h1>
+<hr style="width:500px; margin-left: 20%;">
+<br>
+
+
+<div style="background-color: white; width: 800px; margin-left:20%; padding: 5%;">
+<br><br>
+<h2>Do you want more information about a pet you’ve seen on Petadoption.site?</h2>
+<p>Please directly contact the animal welfare organization that is caring for this pet. This information can be found on the group’s home page or under the pet’s picture on their description page. Please don’t contact Peradoption.site about individual pets. We don’t have any information other than what is posted on their page so contacting us will slow your search and time may be of the essence.</p>
+<h2>Do you need more information on adoption policies? (For instance: What is the adoption fee for a pet? Can you adopt out of state?)</h2>
+<p>Adoption policies vary greatly from shelter to shelter, so please don’t contact Petadoption.site for information specific to a local adoption group. It will slow your inquiry! Contact the shelter or placement group directly. If you are interested in a particular pet, please contact the organization that is caring for that animal. You can find their contact information just under the pet’s photo on each pet description page.
+    Adoption fees range from $5 to hundreds of dollars. Services also range greatly, from virtually none to full vaccinations, spay/neuter, and temperament testing/training. In almost all cases, the adoption fee is less than the actual cost of caring for the pet while it is sheltered. Some groups will not adopt outside their area and many will want to do a “home check” as part of the adoption process.</p>
+<br><hr><br>
+
+<!--Below is the form for radio buttons, text areas, select key and php mailer-->
+<h2>Still have a question? Send us E-mail.</h2>
+<form action="mailer.php" method="post" style="color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;">
+    Name:<br><br>
+    <input type="text" name="name"><br><br>
+    E-mail:<br><br>
+    <input type="text" name="mail"><br><br><br>
+
+
+    <label for="identity">You are:</label>
+    <select name="identity" id="identity">
+    <option value="adopterofcat">Adopter of Cat</option>
+    <option value="adopterofdog">Adopter of Dog</option>
+    <option value="rescue">People from rescue center</option>
+    <option value="others">Others</option>
+    </select>
+    <br><br>
+
+    <p>This email is about:</p>
+    <input type="radio" id="Dog" name="type" value="Dog">
+    <label for="Dog">Adoption of a dog</label><br>
+    <input type="radio" id="Cat" name="type" value="Cat">
+    <label for="Cat">Adoption of a cat</label><br>
+    <input type="radio" id="Others" name="type" value="Others">
+    <label for="Others">Other issues</label>
+    <br><br><br>
+
+ 
+    <label for="Message"> Message: </label><br><br>
+    <textarea id="Message" name="message" rows="10" cols="60"></textarea> <br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+    </form>
+    <br><br>
+
+</div>
+<br><br>
+
+</body>
+</html>

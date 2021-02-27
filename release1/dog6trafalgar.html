@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Trafalgar</title>
+
+    <style>
+    p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+    h2{text-align: left;text-shadow: 2px 2px rgb(107, 107, 107) ;}
+    h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    h4{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 3%;}
+    h5{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;text-indent: 3%;}
+    </style>
+</head>
+
+<body>
+    <!--https://www.petfinder.com/dog/trafalgar-50139630/ma/sudbury/save-a-dog-ma04/-->
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+        <a target="blank" href="homepage.htm">Home</a>
+        <a target="blank" href="dogpage.html">Find a dog</a>
+        <a target="blank" href="catpage.html">Find a cat</a>
+        <a target="blank" href="resourcepage.html">Resources</a>
+        <a target="blank" href="contactpage.html">Contact us</a>
+      </div>
+
+    <br><br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <div class="center"> <img src="dog62.jpg" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div class="center"> <img src="dog61.jpg" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div class="center"> <img src="dog63.jpg" alt="pic" style="width:30%"> </div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <br><br><br>
+
+    <div style="background-color: white; width: 800px; margin-left:5%; padding: 5%;" class="left">
+    <br>
+        <h2>Trafalgar</h2>
+        <p>  Husky & Australian Cattle Dog / Blue Heeler Mix   &nbsp; · &nbsp;  Sudbury, MA</p>
+        <hr>
+        <p>Young &nbsp; ·&nbsp; Male &nbsp; · &nbsp; Medium &nbsp; · &nbsp; Apricot / Beige, White / Cream</p>
+        <hr>
+
+        <h3>About</h3>
+        <h4>HEALTH</h4>
+        <h5>Vaccinations up to date, spayed / neutered.</h5>      
+        <h4>COAT LENGTH</h4>
+        <h5>Medium</h5>        
+        <h4>HOUSE-TRAINED</h4>
+        <h5>Yes</h5>
+        <hr>
+        <br>
+
+        <h3>Meet Trafalgar</h3>
+        <p>
+            Trafalgar is a twelve month old Husky mix who is looking for his forever home. His pictures don't do him justice as he's a happy, playful boy. He needs a dog-experienced adopter who can provide daily exercise and stimulation. He's better with female dogs and although loves playing with all dogs, he can be dominant with other males. Trafalgar has the husky smarts and is a quick learner. He loves his crate, but only for an hour, then he gets too restless (Husky personality). He is an amazing dog for the right person willing to put in the work. He loves to play with toys and will empty your toy box. He will hang out with you while you work from home as long as you can take breaks with lots of outdoor time. He's an attention hog so needs to get tired out if you're working from home. He weighs 43 lbs. so is a nice size. Someone familiar with Huskies or Shepherds would be great. Apply online at http://www.saveadog.org/applytoadopt.asp
+            <br><br>
+    </div>  
+
+
+    <div style="background-color: white; width: 500px; margin-right:5%; padding: 5%; border:5px solid rgb(107, 107, 107);" class="right">
+        <br>
+        <img src="rescuelogo.png" alt="rescue logo" width="100" class="right">
+
+        <h2>Contact</h2>
+        <h3>Save A Dog</h3>
+        <hr>
+        <address>
+          <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Address</p>
+            <p>604 Boston Post Road
+                Sudbury, MA 01776</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Phone</p>
+            <p>(978) 443-7282</p>
+            <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Email</p>
+            <a href="inquiries@saveadog.org">inquiries@saveadog.org</a><br> 
+
+        </address>
+        <br><br>
+     </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

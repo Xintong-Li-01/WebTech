@@ -1,0 +1,111 @@
+.topnav {overflow: hidden;background-color: rgb(131, 167, 207);} 
+.topnav a {float: left;color: #f2f2f2;text-align: center;font-family:"Rubik"; padding: 15px 60px;text-decoration: none;font-size: 17px;}
+.topnav a:hover {background-color: #ddd;color: black;}
+.topnav a.active {background-color: #1b2977;color: white;}
+
+
+
+
+body{background-color:rgba(238, 234, 234, 0.644)}
+h1{color:rgb(131, 167, 207);text-align:left;font-family: "IBM Plex Mono";font-weight: 1000;}
+h2{color:rgb(131, 167, 207);text-align:center;font-family: "Quicksand";font-weight: 1000;font-size: 50px;}
+p{text-align:left; font-family:'Quicksand'; font-size:25px; font-weight: bold; color:rgb(153, 42, 88);line-height: 1.8;}
+.avatar{border-radius: 50%;}
+.float{float:left}
+.center{text-align: center;}
+.right{float:right}
+.left{float:left}
+.border{ width: 1300px; background-color: rgba(255, 230, 230, 0.582); border:15px double white;padding: 20px;margin-left: 7%;}
+hr{width:100%; color:rgba(182, 179, 179, 0.788); height: 2px; background-color:rgba(182, 179, 179, 0.788); borderrgba(182, 179, 179, 0.788);line-height:0.5px;}
+ul{list-style-image: url(icon1.gif);color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+
+
+
+div.gallery {border: 6px solid rgb(131, 167, 207);background-color: white; }  
+div.gallery:hover {border: 6px solid #75798d;}
+div.gallery img {width: 100%;height: auto;padding:10px;}
+div.desc {padding: 15px;text-align: center; font-family: "Quicksand"; font-size:25px; font-weight:bold; color:#75798d;}
+*{box-sizing: border-box;}
+.responsive {padding: 0 10px;float: left;width: 24.99999%;}
+@media only screen and (max-width: 700px) {.responsive {width: 49.99999%;margin: 6px 0;}}
+@media only screen and (max-width: 500px) {.responsive {width: 100%;}}
+.clearfix:after {content: ""; display: table; clear: both;}
+
+.card {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    width: 300px;
+    border-radius: 5px; margin-left:10%}
+.card:hover {box-shadow: 0 8px 16px 0 rgb(76, 77, 124);}
+img {border-radius: 5px 5px 0 0;}
+.container {padding: 2px 16px;}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-left:17%;
+    background-color: rgba(126, 117, 117, 0.507);}
+  
+
+
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;}
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;}
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);}
+
+  
+  .numbertext {
+    color:white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;}
+
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;}
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;}
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}}
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}}
+  
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}}
+
+
+  
