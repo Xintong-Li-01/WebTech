@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+	td {padding-right:40px}
+	</style>
+
+	<script>
+		function processForm()
+		{
+		if (document.getElementById("fn").value == "")
+		{
+			alert("First name is required");
+			document.getElementById("fn").focus();
+		}
+		else if (document.getElementById("ln").value == "")
+		{
+			alert("Last name is required");
+			document.getElementById("ln").focus();
+		}
+		else if (document.getElementById("c1").checked == false && document.getElementById("c2").checked == false && document.getElementById("c3").checked == false && document.getElementById("c4").checked == false)
+		{
+			alert("Please select at least one topic");
+			
+		}
+		else if (document.getElementById("grad").value == "")
+		{
+			alert("Please enter graduation year");
+			document.getElementById("grad").focus();
+		}
+		else if (document.getElementById("grad").value < 2021 || document.getElementById("grad").value > 2024)
+		{
+			alert("Please enter a year between 2021 to 2024(inclusive)");
+			document.getElementById("grad").focus();
+		}
+		else 
+		{
+			return true;
+		}
+		return false;
+	}
+	</script>
+	
+</head>
+<body>
+	<form method="post" action ="http://wtspring13sec2.babson.edu/gordon/mailer.php"  onsubmit="return processForm()">
+	<h1>MIS3690 Student Survey</h1>	
+	<p>Please complete the following survey.  You must answer each question.  When you are done,
+	    please click on the Submit button.</p>
+
+		<p> First Name
+			<input type ="text" name ="First Name" maxlength ="100" id="fn"/>
+			Last Name
+			<input type = "text" name= "Last Name" maxlength ="100" id="ln"/>
+		</p>
+
+		<p> Gender:
+			Male <input type = "radio" name ="gender" value ="male"/>
+			Female <input type = "radio" name ="gender" value ="female"/> </p>
+
+		<p> What grade do you expect to receive?
+			<select name = "D1">
+				<option value = "A">A</option>
+				<option value = "B">B</option>
+				<option value = "C">C</option>
+				<option value = "D">D</option>
+				<option value = "F">F</option>
+			</select>
+		</p>
+
+
+		<table>
+			<tr><td rowspan="4"> Which topics do you find to be fun? </td><td><input type ="checkbox" name="I" value="Images" id="c1"/>Images</td></tr>
+			<tr><td><input type ="checkbox" name="C" value="CSS" id="c2"/> CSS</td></tr>
+			<tr><td><input type ="checkbox" name="T" value="Tables" id="c3"/>Tables </td></tr>
+			<tr><td><input type ="checkbox" name="F" value="Forms" id="c4" />Forms </td></tr>
+		</table>
+
+
+		<p> In what year will you graduate from Babson? 
+			<input type="text" name="graduation" maxlength="4" id="grad">
+		</p>
+
+
+		Please add any comments you have
+		<br>
+			<textarea name ="comments" rows ="10" cols = "50"></textarea>
+		
+		<table>
+			<tr><td><input type = "submit" value = "Submit" name ="Submit"/></td>
+			<td><input type ="reset" value ="Reset" name = "Reset"/></td></tr>
+		</table>
+	
+	</form>
+
+</body>
+</html>
