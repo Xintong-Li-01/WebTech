@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+    <style>
+        button{position:absolute; top:0px; left:0px}
+    </style>
+
+    <script>
+        function change()
+        {
+            var rand1=Math.floor(Math.random()*501);
+            var rand2=Math.floor(Math.random()*501);
+            document.getElementById("c").style.left=rand2+"px";
+            document.getElementById("c").style.top=rand1+"px";
+            var change=new Array("Click me","Move Me","Click Here","Button","Next");
+            var b=document.getElementById("c");
+            b.innerHTML=change[Math.floor(Math.random()*5)];
+        }
+    </script>
+</head>
+
+<body>
+    <button id="c" onclick="change()">Click me</button>
+</body>
+</html>
