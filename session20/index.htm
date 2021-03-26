@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>session 20</title>
+
+	<style>
+	/* Your styles go here */
+	</style>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+	   // jQuery methods go here...
+	   $("#a").click(function(){
+		   $("tr:odd").hide()
+	   })
+	   $("tr").click(function(){
+		   $(this).fadeOut(3000);
+	   })
+
+	   $("#b").click(function(){
+		   $("tr").show();
+		   $("tr:odd").css("background-color","yellow")
+	   })
+
+	});
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<table>
+		<tr><td>1</td></tr>
+		<tr><td>2</td></tr>
+		<tr><td>3</td></tr>
+		<tr><td>4</td></tr>
+
+	</table>
+	<br><br>
+	<button id="a">Hide odd</button>
+	<button id="b">Show all</button>
+  </body>
+</html>
