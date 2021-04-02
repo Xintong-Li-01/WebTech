@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Uno</title>
+
+    <style>
+    p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+    h2{text-align: left;text-shadow: 2px 2px rgb(107, 107, 107) ;}
+    h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    h4{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 3%;}
+    h5{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;text-indent: 3%;}
+    </style>
+</head>
+
+<body>
+    <!--https://www.petfinder.com/cat/uno-50120469/ma/melrose/melrose-humane-society-ma393/-->
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+      <a target="blank" href="homepage.htm">Home</a>
+      <a target="blank" href="dogpage.html">Find a dog</a>
+      <a target="blank" href="catpage.html">Find a cat</a>
+      <a target="blank" href="resourcepage.html">Resources</a>
+      <a target="blank" href="contactpage.html">Contact us</a>
+      </div>
+
+    <br><br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 1</div>
+          <div class="center"> <img src="cat5.jpg" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <br><br><br>
+
+    <div style="background-color: white; width: 800px; margin-left:5%; padding: 5%;" class="left">
+    <br>
+        <h2>Uno</h2>
+        <p>Domestic Short Hair &nbsp; · &nbsp; Melrose,MA</p>
+        <hr>
+        <p>Kitten &nbsp;·&nbsp; Female &nbsp; · &nbsp; Medium &nbsp; · &nbsp; Tortoiseshell</p>
+        <hr>
+
+        <h3>About</h3>
+        <h4>HEALTH</h4>
+        <h5>Vaccinations up to date, spayed / neutered.</h5>
+        <h4>HOUSE-TRAINED</h4>
+        <h5>Yes</h5>        
+        <h4>COAT LENGTH</h4>
+        <h5>Short</h5>
+        <br>
+        <hr>
+
+        <h3>Meet Uno</h3>
+        <p>
+            Say Hello to Uno!!!!!
+            <br><br>
+            Uno and his housemate Timmy were surrendered due to the owner passing away. No one in the family wanted their father's cats and we luckily found a foster mom to take them in.
+            <br><br>
+            Both of them were in pretty rough shape when we got them. Their fur was a mess and both of them needed a good grooming. The foster mom brushed them just about every day and now they look like totally new cats.
+            Uno is a handsome cat that loves his routine of looking for his wet food in the morning, his chilling out the window or patio door on the latest squirrel or bird sightings and then plop down next to anyone on the couch. Don't expect him to be a lap but he'll definitely be right next to you looking for a good pet.
+            Uno grew up in a quiet home and we're looking for a similar home. No young children for Uno. Uno is going to be separated from his housemate Timmy. Timmy is a senior cat and possibly 13-15 years old and has early kidney disease.We're not sure what to for Timmy but want Uno to be adopted in a furrever home.
+            <br><br>
+            Uno is about an 8 year old neutered male cat with up to date shots. If you're interested in Uno then please contact us.        
+        </p>
+        <br><br>
+    </div>  
+
+
+    <div style="background-color: white; width: 500px; margin-right:5%; padding: 5%; border:5px solid rgb(107, 107, 107);" class="right">
+        <br>
+        <img src="rescuelogo.png" alt="rescue logo" width="100" class="right">
+
+        <h2>Contact</h2>
+        <h3>Melrose Humane Society</h3>
+        <hr>
+        <address>
+          <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Address</p>
+            <p>PO Box 760668
+                Melrose, MA 02176</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Phone</p>
+                <p>781-771-7607</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Email</p>
+                <a href="brian.aurilio@gmail.com">brian.aurilio@gmail.com</a><br> 
+
+        </address>
+        <br><br>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

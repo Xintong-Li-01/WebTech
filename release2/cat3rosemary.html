@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Rosemary</title>
+
+    <style>
+    p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+    h2{text-align: left;text-shadow: 2px 2px rgb(107, 107, 107) ;}
+    h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    h4{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 3%;}
+    h5{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;text-indent: 3%;}
+    </style>
+</head>
+
+<body>
+    <!--https://www.petfinder.com/cat/rosemary-50403378/ma/medford/kitty-connection-inc-ma373/-->
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+        <a target="blank" href="homepage.htm">Home</a>
+        <a target="blank" href="dogpage.html">Find a dog</a>
+        <a target="blank" href="catpage.html">Find a cat</a>
+        <a target="blank" href="resourcepage.html">Resources</a>
+        <a target="blank" href="contactpage.html">Contact us</a>
+      </div>
+
+    <br><br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <div class="center"> <img src="cat3.PNG" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <div class="center"> <img src="cat32.jpg" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <div class="center"> <img src="cat33.jpg" alt="pic" style="width:30%"> </div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <br><br><br>
+
+    <div style="background-color: white; width: 800px; margin-left:5%; padding: 5%;" class="left">
+    <br>
+        <h2>Rosemary</h2>
+        <p>  Domestic Short Hair &nbsp; · &nbsp;  Medford, MA</p>
+        <hr>
+        <p>Adult &nbsp;·&nbsp; Female &nbsp; · &nbsp; Medium </p>
+        <hr>
+        <h3>About</h3>
+        <h4>HEALTH</h4>
+        <h5>Vaccinations up to date, spayed / neutered, special needs. Epilepsy.</h5>
+        <h4>HOUSE-TRAINED</h4>
+        <h5>Yes</h5>        
+        <h4>COAT LENGTH</h4>
+        <h5>Short</h5>
+        <br>
+        
+        <hr>
+        <h3>Meet Rosemary</h3>
+        <p>
+            Hi all! My name’s Rosemary and my foster moms think I am the cleverest kitty they’ve ever met! I was lost and scared, roaming the streets of Shrewsbury MA, when I decided to run into the house of four Tufts Veterinary students! I made myself right at home with the girls, knowing I would be well cared for in having my litter of kittens with these vet students.
+            <br><br>
+            A few weeks later, we all found out I have epilepsy and have occasional 30 second-long seizures. But the girls fixed me right up with a delicious chicken-flavored drug called Keppra that has been keeping my seizures in check. Now having weaned and adopted out my four beautiful kittens, I am ready to find my own forever home with someone who can keep an eye on my epilepsy and give me my medication regularly! I am the sweetest, chattiest momma cat who loves her catnip mice, long snoozes on beds and basking in the sunlight. I am a 1 year old, now spayed, female tabby cat, and potentially be ok living with a low energy dog or cat. Please ask my foster mom for more information and we can arrange a time to meet!
+        </p>
+        <br><br>
+    </div>  
+
+
+    <div style="background-color: white; width: 500px; margin-right:5%; padding: 5%; border:5px solid rgb(107, 107, 107);" class="right">
+        <br>
+        <img src="rescuelogo.png" alt="rescue logo" width="100" class="right">
+
+        <h2>Contact</h2>
+        <h3>Kitty Connection Inc</h3>
+        <hr>
+        <address>
+          <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Address</p>
+            <p>6 Cudworth St
+                Medford, MA 02155</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Phone</p>
+                <p>781-393-9995</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Email</p>
+                <a href="kc@kittyconnection.net">kc@kittyconnection.net</a><br> 
+
+        </address>
+        <br><br>
+     </div>
+
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

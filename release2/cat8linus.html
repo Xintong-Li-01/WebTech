@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Linus</title>
+
+    <style>
+    p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+    h2{text-align: left;text-shadow: 2px 2px rgb(107, 107, 107) ;}
+    h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    h4{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 3%;}
+    h5{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;text-indent: 3%;}
+    </style>
+</head>
+
+<body>
+    <!--https://www.petfinder.com/cat/linus-50619117/ma/salem/northeast-animal-shelter-ma171/-->
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+      <a target="blank" href="homepage.htm">Home</a>
+      <a target="blank" href="dogpage.html">Find a dog</a>
+      <a target="blank" href="catpage.html">Find a cat</a>
+      <a target="blank" href="resourcepage.html">Resources</a>
+      <a target="blank" href="contactpage.html">Contact us</a>
+      </div>
+
+    <br><br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 1</div>
+          <div class="center"> <img src="cat8.jpg" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <br><br><br>
+
+    <div style="background-color: white; width: 800px; margin-left:5%; padding: 5%;" class="left">
+    <br>
+        <h2>Linus</h2>
+        <p>Domestic Medium Hair &nbsp; · &nbsp; Salem,MA</p>
+        <hr>
+        <p>Adult &nbsp;·&nbsp; Male &nbsp; · &nbsp; Medium</p>
+        <hr>
+
+        <h3>About</h3>
+        <h4>HEALTH</h4>
+        <h5>Vaccinations up to date, spayed / neutered.</h5>
+        <br>
+        <hr>
+
+        <h3>Meet Linus</h3>
+        <p>
+            Linus is looking for a patient home that will give him an abundance of time to settle into his new surroundings. When he arrived at the shelter he was very frightened and overwhelmed in the shelter environment and went to decompress in a loving foster home. Here is what his foster family has to say:Linus has been in our home for 6 weeks today. He doing much better. We can now pet him (on his terms), he loves to play with his special toy... almost obsessed with it! He's come so far and is looking for patient people that understand he will regress a bit back to his scaredy-cat behavior in the beginning. He still startles at certain weird things and noises. He needs a quiet home with 1 or 2 adult people and no children living in the home. Someone who's extremely patient and willing to put up with his silly, bizarre behavior. I'm pretty sure whoever adopts him will have to start over like we did which means they won't see him until he's good and ready. It took a month for us to be able to get close to him where he wasn't hiding most of the time. And almost 6 weeks before he would come up to us for pets. But with patience and time, he now likes to nap on our bed or sleep in the bedroom chair. He actually purrs and does kitty biscuits! He doesn't allow you to pick him up and he hasn't attempted to jump up on my lap just yet (if ever). Just hoping it can be a smooth transition for him. I know the perfect person is out there for him!Linus is currently in a foster home. To meet him please follow the instructions below.Linus is a shy guy, which makes him one of our Unfurgettable Friends! If you are interested in learning more about Linus, email unfurgettable@neas.org ATTN: Linus and fill out the online pre-adoption form.
+        </p>
+        <br><br>
+    </div>  
+
+
+    <div style="background-color: white; width: 500px; margin-right:5%; padding: 5%; border:5px solid rgb(107, 107, 107);" class="right">
+        <br>
+        <img src="rescuelogo.png" alt="rescue logo" width="100" class="right">
+
+        <h2>Contact</h2>
+        <h3>Northeast Animal Shelter</h3>
+        <hr>
+        <address>
+          <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Address</p>
+            <p>347 Highland Ave
+                Salem, MA 01970</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Phone</p>
+                <p>(978) 745-9888</p>
+                <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Email</p>
+                <a href="petinfo@neas.org">petinfo@neas.org</a><br> 
+
+        </address>
+        <br><br>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

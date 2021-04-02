@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Mia</title>
+
+    <style>
+    p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+    h2{text-align: left;text-shadow: 2px 2px rgb(107, 107, 107) ;}
+    h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    h4{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 3%;}
+    h5{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;text-indent: 3%;}
+    </style>
+</head>
+
+<body>
+    <!--https://www.petfinder.com/cat/mia-50568888/ma/dedham/animal-rescue-league-of-bostondedham-branch-ma60/-->
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+      <a target="blank" href="homepage.htm">Home</a>
+      <a target="blank" href="dogpage.html">Find a dog</a>
+      <a target="blank" href="catpage.html">Find a cat</a>
+      <a target="blank" href="resourcepage.html">Resources</a>
+      <a target="blank" href="contactpage.html">Contact us</a>
+      </div>
+
+    <br><br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 1</div>
+          <div class="center"> <img src="cat1.PNG" alt="cat1" style="width:30%"> </div>
+        </div> 
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <br><br><br>
+
+    <div style="background-color: white; width: 800px; margin-left:5%; padding:5%;" class="left">
+    <br>
+        <h2>Mia</h2>
+        <p>Domestic Short Hair &nbsp; · &nbsp; Dedham,MA</p>
+        <hr>
+        <p>Adult &nbsp;·&nbsp; Female &nbsp; · &nbsp; Medium</p>
+        <hr>
+        <h3>About</h3>
+        <h4>HEALTH</h4>
+        <h5>Spayed/Neutered</h5>
+        <hr>
+        <h3>Meet Mia</h3>
+        <p>
+        Mia is an adorable 8yr old independent lady who came to us when her owner could no longer care for her. She is a quiet kitty that does her own thing and would like to be the only pet in home. She LOVES a comfy bed and blankets to sleep on (or under, she's not picky!) She enjoys indulging in a good meal and at 17 pounds she comes with a medical letter for obesity. It will be extremely important and necessary to get her a vet appointment with your primary care vet to get her on a diet/exercise plan moving forward. If you are looking for a independent companion who likes attention on her terms, Mia might be the kitty for you.
+        </p>
+        <br><br>
+    </div>  
+
+
+    <div style="background-color: white; width: 500px; margin-right:5%; padding: 5%; border:5px solid rgb(107, 107, 107);" class="right">
+        <br>
+        <img src="rescuelogo.png" alt="rescue logo" width="100" class="right">
+
+        <h2>Contact</h2>
+        <h3>Animal Rescue League of Boston</h3>
+        <hr>
+        <address>
+            <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Address</p>
+            <p>55 Annas Place, Dedham, MA 02026</p>
+            <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Phone</p>
+            <p>(617)-426-9170</p>
+            <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Email</p>
+            <a href="Dedham-adoption@arlboston.org">Dedham-adoption@arlboston.org</a><br> 
+
+        </address>
+        <br><br>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

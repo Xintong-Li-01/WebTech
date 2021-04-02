@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title> 
+  <!--  Bootstrap2.htm -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style type="text/css">
+    img{height:200px;width:200px;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+
+  $(function(){
+    $("#p1").text("This is paragraph #1");
+  });
+
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Babson 
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://canvasdiscovery.babson.edu/">Canvas</a></li>
+            <li><a href="https://www.babson.edu/">Babson webpage</a></li>
+          </ul>
+        </li>
+
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.w3schools.com/">W3schools</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">  
+    <div class="jumbotron">    
+      <h1>My first Bootstrap website!</h1>     
+      <p>This is going to be a subtitle.</p>  
+    </div>
+
+  <div class="row">
+    <div class="col-sm-4" style="background-color: aquamarine;">
+      <p id="p1">This is first paragragh.</p>
+      <p>This is second paragraph.</p>
+    </div>
+
+    <div class="col-sm-6" style="background-color: azure;">
+      <p>This is third paragraph.</p>
+      <p>This is fourth paragraph.</p>
+    </div>
+
+    <div class="col-sm-2" style="background-color: beige;">
+     <p>This is fifth paragraph.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color: burlywood;">
+      1
+    </div>
+
+    <div class="col-sm-4" style="background-color:cadetblue;">
+      1
+    </div>
+
+    <div class="col-sm-4" style="background-color:darkgrey;">
+      1
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

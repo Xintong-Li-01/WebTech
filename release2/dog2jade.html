@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Jade</title>
+
+    <style>
+    p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+    h2{text-align: left;text-shadow: 2px 2px rgb(107, 107, 107) ;}
+    h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+    h4{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 3%;}
+    h5{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;text-indent: 3%;}
+    </style>
+</head>
+
+<body>
+    <!--https://www.petfinder.com/dog/jade-local-38446660/ma/medfield/forever-home-rescue-new-england-ma368/-->
+    <img src="logo.png" alt="logo" width="60" class="float">
+    <h1>Pet Adoption</h1>
+    
+
+    <div class="topnav">
+        <a target="blank" href="homepage.htm">Home</a>
+        <a target="blank" href="dogpage.html">Find a dog</a>
+        <a target="blank" href="catpage.html">Find a cat</a>
+        <a target="blank" href="resourcepage.html">Resources</a>
+        <a target="blank" href="contactpage.html">Contact us</a>
+      </div>
+
+    <br><br><br>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <div class="center"> <img src="dog2.PNG" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 2</div>
+            <div class="center"> <img src="dog22.PNG" alt="pic" style="width:30%"> </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        <br><br><br>
+
+    <div style="background-color: white; width: 800px; margin-left:5%; padding: 5%;" class="left">
+    <br>
+        <h2>Jade</h2>
+        <p>  Labrador Retriever Mix &nbsp; · &nbsp;  Medfield, MA</p>
+        <hr>
+        <p>Adult &nbsp; ·&nbsp; Male &nbsp; · &nbsp; Medium &nbsp; · &nbsp; Brown/Chocolate</p>
+        <hr>
+        <h3>About</h3>
+        <h4>HEALTH</h4>
+        <h5>Vaccinations up to date</h5>
+        <h4>PREFERS A HOME WITHOUT</h4>
+        <h5>Other dogs, children.</h5>        
+
+        <hr>
+        <h3>Meet Jade</h3>
+        <p>
+            Jade is a beautiful 45 pound, 3.75 -year- old Lab mix. He was adopted from us as a puppy, but now needs to be rehomed due to his anxiety and the addition of a new baby in the house.
+            Jade needs a home with active, dog-experienced owners and no young children or other dogs or cats. Jade thrives on structure and will need training, exercise, and positive reinforcement. His family says he is a great dog to have around. This handsome boy enjoys lounging in the sun, cuddling, playing, and car rides; but his favorite activity is going for walks. Jade still has puppy-like qualities, and he loves to run around his fenced yard and play fetch, though a fenced yard isn't mandatory. His original write up is below and the second to the last picture is of him as a puppy. If you can give Jade his forever home, please apply today.
+            Jade's adoption fee is $20
+        </p>
+       
+        <br><br>
+    </div>  
+
+
+    <div style="background-color: white; width: 500px; margin-right:5%; padding: 5%; border:5px solid rgb(107, 107, 107);" class="right">
+        <br>
+        <img src="rescuelogo.png" alt="rescue logo" width="100" class="right">
+
+        <h2>Contact</h2>
+        <h3>German Shepherd Rescue of New England, Inc.</h3>
+        <hr>
+        <address>
+          <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Address</p>
+            <p>Medfield, MA</p>
+            <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Phone</p>
+            <p>(508)-359-4465</p>
+            <p style="color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 20px; text-indent: 0%;">Email</p>
+            <a href="adoptinfo@gsrne.org">adoptinfo@gsrne.org</a><br> 
+
+        </address>
+        <br><br>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>
