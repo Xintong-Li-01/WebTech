@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <style type="text/css">
-    img{height:200px;width:200px;}
+
+    img{height:150px;width:150px;}
+
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -16,7 +18,11 @@
 
   $(function(){
     $("#p1").text("This is paragraph #1");
+    $("#pic1").click(function(){
+      $("#pic2").attr("src","img1.png")
+    })
   });
+
 
   </script>
 </head>
@@ -66,15 +72,16 @@
   </div>
   <div class="row">
     <div class="col-sm-4" style="background-color: burlywood;">
-      1
+      <img src="img1.png"alt="pic" id="pic1">
     </div>
 
     <div class="col-sm-4" style="background-color:cadetblue;">
-      1
+      <img src="img2.png" alt="pic" id="pic2">
+
     </div>
 
     <div class="col-sm-4" style="background-color:darkgrey;">
-      1
+      <img src="img3.png" alt="pic" id="pic3">
     </div>
 
   </div>
