@@ -11,10 +11,44 @@
     <title>Contact Us</title>
 
     <style>
-        p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
+        p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 15px;}
         h2{color:black;text-align: left;text-shadow: 1px 1px rgb(131, 167, 207) ;font-size:23px;}
         h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
     </style>
+
+    <script>
+        function form()
+        {
+            if(document.getElementById("N").value=="")
+            {
+                alert("Please enter your name before submitting :)");
+            }
+            else if(document.getElementById("E").value=="")
+            {
+                alert("Please enter your E-mail before submitting :)");
+            }
+            else if (document.getElementById("Message").value=="")
+            {
+                alert("Please enter something in the message box before submitting :)");
+            }
+            else
+            {
+                return true;
+            }
+            return false;
+        }
+
+        function B(){
+            document.getElementById("p1") .style.fontSize="20px";
+            document.getElementById("p2") .style.fontSize="20px";
+        }
+
+        function B2(){
+            document.getElementById("p1") .style.fontSize="15px";
+            document.getElementById("p2") .style.fontSize="15px";
+        }
+
+    </script>
 </head>
 <body>
     <img src="logo.png" alt="logo" width="60" class="float">
@@ -37,22 +71,31 @@
 <br>
 
 
-<div style="background-color: white; width: 800px; margin-left:20%; padding: 5%;">
-<br><br>
+<div style="background-color: white; width: 800px; margin-left:20%; padding:2% 5% 5% 5%;">
+<br>
 <h2>Do you want more information about a pet you’ve seen on Petadoption.site?</h2>
-<p>Please directly contact the animal welfare organization that is caring for this pet. This information can be found on the group’s home page or under the pet’s picture on their description page. Please don’t contact Peradoption.site about individual pets. We don’t have any information other than what is posted on their page so contacting us will slow your search and time may be of the essence.</p>
+<p id="p1">Please directly contact the animal welfare organization that is caring for this pet. This information can be found on the group’s home page or under the pet’s picture on their description page. Please don’t contact Peradoption.site about individual pets. We don’t have any information other than what is posted on their page so contacting us will slow your search and time may be of the essence.</p>
+<br>
 <h2>Do you need more information on adoption policies? (For instance: What is the adoption fee for a pet? Can you adopt out of state?)</h2>
-<p>Adoption policies vary greatly from shelter to shelter, so please don’t contact Petadoption.site for information specific to a local adoption group. It will slow your inquiry! Contact the shelter or placement group directly. If you are interested in a particular pet, please contact the organization that is caring for that animal. You can find their contact information just under the pet’s photo on each pet description page.
+<p id="p2">Adoption policies vary greatly from shelter to shelter, so please don’t contact Petadoption.site for information specific to a local adoption group. It will slow your inquiry! Contact the shelter or placement group directly. If you are interested in a particular pet, please contact the organization that is caring for that animal. You can find their contact information just under the pet’s photo on each pet description page.
     Adoption fees range from $5 to hundreds of dollars. Services also range greatly, from virtually none to full vaccinations, spay/neuter, and temperament testing/training. In almost all cases, the adoption fee is less than the actual cost of caring for the pet while it is sheltered. Some groups will not adopt outside their area and many will want to do a “home check” as part of the adoption process.</p>
-<br><hr><br>
+<br>
+<!--Relase2 Q1-1:change style of elements-->
+<p style="text-align: center;">
+    <button type="button" onclick="B()" >Bigger font</button>
+    <button type="button" onclick="B2()" >Smaller font</button>
+</p>
+<br>
+<hr><br>
 
 <!--Below is the form for radio buttons, text areas, select key and php mailer-->
+<!--Release2 Q1-3: form validation-->
 <h2>Still have a question? Send us E-mail.</h2>
-<form action="mailer.php" method="post" style="color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;">
-    Name:<br><br>
-    <input type="text" name="name"><br><br>
-    E-mail:<br><br>
-    <input type="text" name="mail"><br><br><br>
+<form action="mailer.php" method="post" onsubmit="return form()" style="color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;">
+    Name*:<br><br>
+    <input type="text" name="name" id="N"><br><br>
+    E-mail*:<br><br>
+    <input type="text" name="mail" id="E"><br><br><br>
 
 
     <label for="identity">You are:</label>
@@ -74,7 +117,7 @@
     <br><br><br>
 
  
-    <label for="Message"> Message: </label><br><br>
+    <label for="Message"> Message*: </label><br><br>
     <textarea id="Message" name="message" rows="10" cols="60"></textarea> <br><br>
     <input type="submit" value="Send">
     <input type="reset" value="Reset">

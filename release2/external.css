@@ -15,7 +15,7 @@ p{text-align:left; font-family:'Quicksand'; font-size:25px; font-weight: bold; c
 .center{text-align: center;}
 .right{float:right}
 .left{float:left}
-.border{ width: 90%; background-color: rgba(255, 230, 230, 0.582); border:15px double white;padding: 20px;margin-left: 7%;}
+.border{ width: 80%; background-color: rgba(255, 230, 230, 0.582); border:15px double white;padding:3%;margin-left: 10%;}
 hr{width:100%; color:rgba(182, 179, 179, 0.788); height: 2px; background-color:rgba(182, 179, 179, 0.788); borderrgba(182, 179, 179, 0.788);line-height:0.5px;}
 ul{list-style-image: url(icon1.gif);color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 17px;}
 
