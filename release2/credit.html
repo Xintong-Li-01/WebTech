@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM%20Plex%20Mono">
+    <link rel="stylesheet" href="https://fonts.gogleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css"  href="external.css">
+    <title>Credit page</title>
+
+    <style>
+        p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 18px; margin-left: 10%;}
+        h2{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 18px; margin-left: 10%;text-align: start;}
+        div{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 18px; margin-left: 10%;}
+        .bold{font-weight: 600;font-size: 30px;}
+        .highlight{color:rgb(76, 75, 189);font-family: Rubik;font-weight: 400;font-size: 25px; margin-left: 10%;}
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#b1").click(function(){
+        $("#div1").fadeToggle("slow");
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle("slow");
+        });
+        });
+
+        $(document).ready(function(){
+        $("#b2").click(function(){
+        $("h2").addClass("bold");
+        $("#p1").addClass("highlight");
+        });
+        });
+
+    </script>
+</head>
+<body>
+    <h1 style="margin-left: 10%;">Credit page</h1>
+    <hr style="margin-left: 10%; width: 90%" >
+    <br>
+
+<p><button id="b1">Click to see/hide credits</button></p>
+<p><button id="b2">Click to highlight honor pledge</button></p>
+
+<br>
+    <div id="div1">
+        1. Video on home page is from Hallmark:https://www.youtube.com/watch?v=3LzNQY3aT4c&t=1s
+    </div>
+    <div id="div2">
+        2. Music on the home page is from https://soundcloud.com/ 
+    </div>
+    <div id="div3">
+        3. All photos and information on pet adoption are from Petfinder: https://www.petfinder.com/
+    </div>
+
+    <br><br>
+
+    <h2>Honor pledge</h2>
+    <p id="p1">
+     “I have abided by the Babson Code of Ethics in this work and pledge to be better than that which would compromise my integrity.”
+    </p>
+    <br><br><br><br><br>
+    
+    <p style="font-size: 18px; text-align: center;"><a href="homepage.htm">Go back to home page</a></p>
+</body>
+</html>

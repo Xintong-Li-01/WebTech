@@ -14,8 +14,10 @@
         p{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 15px;}
         h2{color:black;text-align: left;text-shadow: 1px 1px rgb(131, 167, 207) ;font-size:23px;}
         h3{color:black; font-family:IBM Plex Mono;font-weight: 400;font-size: 25px;}
+        #phrase1{font-size:20px; font-family: Rubik; width:40%; color:rgb(72, 72, 73); border:10px double rgb(76, 67, 121); margin-left: 25%; text-align:center;background-color:cornsilk}
     </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function form()
         {
@@ -48,9 +50,30 @@
             document.getElementById("p2") .style.fontSize="15px";
         }
 
+        
+		var phraseList = new Array("Adopt a cat or a dog today", "Every pet need a hero", "Adopt a pet and change its future", "Rescue: it's not a verb, it's a promise", "Rescue is my favorite breed")
+		var bgcList = new Array("cornsilk", "white", "lavender", "rgb(230, 223, 223)")   
+		var txtColorList = new Array("rgb(43, 43, 80)","rgb(48, 48, 107)", "rgb(163, 82, 96)", "rgb(99, 49, 49)")  
+	    function TxtAnimation()
+	   {
+			var myp = document.getElementById("phrase1")
+			var counter = Math.floor(Math.random()*(phraseList.length))
+			var colorCounter = Math.floor(Math.random()*(bgcList.length))
+			myp.innerHTML=phraseList[counter]
+			myp.style.backgroundColor = bgcList[colorCounter]
+			myp.style.color = txtColorList[colorCounter]
+			setTimeout("TxtAnimation()",4000) 
+	   }
+
+       $(document).ready(function(){
+            $("#b1").click(function(){
+            $("#contactblock").animate({left: '200px'});
+            });
+            });
+
     </script>
 </head>
-<body>
+<body onload="TxtAnimation()">
     <img src="logo.png" alt="logo" width="60" class="float">
     <h1>Pet Adoption</h1>
     
@@ -66,12 +89,21 @@
 <br><br>
 
     
-<h1 style="margin-left:20%;font-size: 40px;">Contact us</h1>
-<hr style="width:500px; margin-left: 20%;">
+<h1 style="margin-left:25%;font-size: 40px;">Contact us</h1>
+<div id="contactblock" style="background:rgb(131, 167, 207);height:40px;width:160px;position:absolute; margin-left: 25%;"></div>
+<p style="margin-left: 25%;">xli5@babson.edu</p>
+
+<p style="margin-left: 25%;"><button id="b1">Click to see email</button></p>
+
+
+<hr style="width:50%; margin-left: 25%;">
+<br><br>
+
+
+<p id="phrase1"></p>
 <br>
 
-
-<div style="background-color: white; width: 800px; margin-left:20%; padding:2% 5% 5% 5%;">
+<div style="background-color: white; width: 50%; margin-left:25%; padding:2% 5% 5% 5%;">
 <br>
 <h2>Do you want more information about a pet you’ve seen on Petadoption.site?</h2>
 <p id="p1">Please directly contact the animal welfare organization that is caring for this pet. This information can be found on the group’s home page or under the pet’s picture on their description page. Please don’t contact Peradoption.site about individual pets. We don’t have any information other than what is posted on their page so contacting us will slow your search and time may be of the essence.</p>

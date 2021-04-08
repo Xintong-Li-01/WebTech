@@ -12,14 +12,22 @@
 
     <style>
         table{border: 5px double rgb(131, 167, 207);border-collapse: collapse;}
-        th{color:rgb(131, 167, 207);text-align:left;font-family: "Quicksand";font-size: 50px;padding:5%}
+        th{color:rgb(131, 167, 207);text-align:left;font-family: "Quicksand";font-size: 50px;padding:5%; color:rgb(218, 197, 197)}
         tr,td{color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 30px;text-align: start; padding:5%}
         table{margin-left: 0%;}
-        
     </style>
+
+    <script>
+    
+    function selectBGcolor() 
+	{
+		var bgColors = new Array("cornsilk", "rgba(238, 234, 234, 0.644)", "lavender", "rgb(230, 223, 223)","rgb(156, 150, 150)","rgb(218, 197, 197)");
+		document.getElementById("bod").style.backgroundColor=bgColors[Math.floor(Math.random()*bgColors.length)];
+	}
+    </script>
 </head>
 
-<body>
+<body id="bod" onload="selectBGcolor()">
     <img src="logo.png" alt="logo" width="60" class="float">
     <h1>Pet Adoption</h1>
     

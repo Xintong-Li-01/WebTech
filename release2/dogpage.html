@@ -9,12 +9,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" type="text/css"  href="external.css">
     <title>Find a dog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <style>
         h2{color: rgb(107, 107, 107);font-family: Quicksand; font-size: 30px; text-shadow: 2px 2px white; font-weight: 400;}
         h3{color: rgb(107, 107, 107);font-family: Quicksand; font-size: 18px;}
         th, td {padding: 5%;}
+
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          border: solid 1px #c3c3c3;
+          font-size: 20px;
+        }
+        
+        #panel {padding: 50px;display: none;}
     </style>
+
+    <script>
+            $(document).ready(function(){
+            $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+            });
+            });
+
+    </script>
 </head>
 <body>
     <img src="logo.png" alt="logo" width="60" class="float">
@@ -31,18 +51,16 @@
     
 <br><br>
 
+<div id="flip" style="background-color: white; width: 1200px; padding: 2%; margin-left:10%">
+    <h1 style="font-size: 30px;">Are you a first time puppy owner?</h1>
+    <p style="color:rgb(131, 167, 207);font-family: Rubik;font-weight: 400;font-size: 16px;"> Click to learn more</p>
+</div>
 
-    <div style="background-color: white; width: 1200px; padding: 2%; margin-left:10%">
-        <br>
-        <h1 >Are you a first time puppy owner?</h1>
-        <hr>
-        <p style="color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 20px;">
-            Puppies need more than just a bed and a food bowl to thrive. They also need constant care and attention. While it may require a lot of work initially, it’s well worth the effort down the road. Establishing good habits in those first weeks will lay the groundwork for a lifetime of happiness for you and your dog. Remember, you have a responsibility to help your puppy grow into a happy and healthy dog.
-        </p>
-        <br><br>
-    </div> 
-    
-    <br><br>
+<div id="panel" style="background-color: white; width: 1200px; padding: 2%; margin-left:10%">
+    <p style="color:rgb(107, 107, 107);font-family: Rubik;font-weight: 400;font-size: 20px;">
+        Puppies need more than just a bed and a food bowl to thrive. They also need constant care and attention. While it may require a lot of work initially, it’s well worth the effort down the road. Establishing good habits in those first weeks will lay the groundwork for a lifetime of happiness for you and your dog. Remember, you have a responsibility to help your puppy grow into a happy and healthy dog.</p>
+</div>
+<br><br>
 
     <table style="width:80%;margin-left:5%"> 
         <tr><td>
