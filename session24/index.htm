@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session24</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.novacancy.js"></script>
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css" type="text/css" media="screen,print">
+	<link href="css/demo.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+
+    <script>
+        $(document).ready(function() {
+            $('.no').novacancy({
+                'reblinkProbability': 0.1,
+                'blinkMin': 0.2,
+                'blinkMax': 0.6,
+                'loopMin': 8,
+                'loopMax': 10,
+                'color': 'WHITE',
+                'blink': true
+            });
+            $('.vacancy').novacancy({
+                'color': 'RED'
+            });
+            });
+
+            $('.element').novacancy({
+                'reblinkProbability': (1/3),
+                'blinkMin': 0.01,
+                'blinkMax': 0.5,
+                'loopMin': 0.5,
+                'loopMax': 2,
+                'color': 'ORANGE',
+                'glow': ['0 0 80px Orange', '0 0 30px Red', '0 0 6px Yellow'],
+                'off': 0, // amount of off chars
+                'blink': 0, // amount of blink chars
+                'classOn': 'on',
+                'classOff': 'off',
+                'element': 'data', // split content by elemen
+                'autoOn': true
+                });
+    </script>
+
+</head>
+<body>
+    <p class="no">Web</p>
+    <p class="vacancy">Tech</p>
+</body>
+</html>
